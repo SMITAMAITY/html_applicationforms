@@ -9,6 +9,7 @@ import { FormfiveComponent } from './formfive/formfive.component';
 import { FormsixComponent } from './formsix/formsix.component';
 import { FormsevenComponent } from './formseven/formseven.component';
 import { FormeightComponent } from './formeight/formeight.component';
+import { FormnineComponent } from './formnine/formnine.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path:'five', component: FormfiveComponent },
   { path:'six', component: FormsixComponent },
   { path:'seven', component: FormsevenComponent },
-  { path:'eight', component: FormeightComponent }
+  { path:'eight', component: FormeightComponent },
+  { path:'nine', component: FormnineComponent }
 ];
 
 @NgModule({
