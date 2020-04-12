@@ -1,0 +1,228 @@
+
+<div class="container-fluid">
+    <div class="row header-section">
+        <span>Form Eight</span>
+    </div>
+  
+        <div class="row card">
+            <!-- <h3>{{data}}</h3>  -->
+   <form [formGroup]="userForm" (ngSubmit)="submit()">
+       <div class="form-group">
+    
+  
+  
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h4>Information about the candidate</h4>
+             <!-- <div class="row card1"> -->
+          
+  
+            <div class="col-sm-12">
+            <div>
+           
+        <table>
+            <tr>
+                <td><label> Email Id </label></td>
+                <td><input type="email" formControlName="mailId"></td>
+                <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label> Candidate's Name </label></td>
+                <td><input type="text" formControlName="Name"></td>
+               
+            </tr>
+            <br>
+        <tr>
+            <td><label> CV </label></td>
+            <td><input type="file" formControlName="cv"></td>
+        </tr>
+        <br>
+       
+      
+ 
+      
+        <tr>
+              <td><label>Date of Birth (DD/MM/YYYY) </label></td>
+              <td><input type="date" formControlName="dob"></td>
+        </tr>
+    
+        <br>
+        
+            
+        <tr>
+          <td><label>Contact</label></td>
+          <td><input type="number" formControlName="contact"></td>
+    </tr>
+  
+    <br>
+            <tr>
+                <td><label>Registration Date</label></td>
+                <td><input type="date" formControlName="registrationDate"></td>
+            </tr>
+            <br>
+        </table>
+    <div> <h4>Dashboard</h4>
+      <table> 
+        <tr>
+            <td><label>Discussion Date</label></td>
+          
+            <td><input type="date" formControlName="discussionDate"></td>
+           
+        </tr>
+        <br>
+        <tr>
+            <td><label>Applying for the Position</label></td>
+          
+            <td><input type="text" formControlName="position"></td>
+           
+        </tr>
+        <br>
+        <tr>
+            <td><label>Job Requistion Number</label></td>
+          
+            <td><input type="text" formControlName="job"></td>
+           
+        </tr>
+        <br>
+           <tr>
+            <td><label>Discussion Time</label></td>
+          
+            <td><input type="time" formControlName="timeTaken"></td>
+           
+        </tr>
+        <br>
+        <tr>
+        <td><label>Mode of Interview</label></td>
+        
+        <td><input type="checkbox" class="form-check-input medium" formControlName="interview">&nbsp;&nbsp;&nbsp;&nbsp;<label>Telephonic</label></td>
+    
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="interview">&nbsp;&nbsp;&nbsp;&nbsp;<label>Face-to-Face</label></td>
+        
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="interview">&nbsp;&nbsp;&nbsp;&nbsp;<label>Video Conference</label></td>
+    
+    </tr>
+    <br>
+
+
+    <tr>
+        <td><label>Technical Competencies</label></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Expert</label></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Competent</label></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Trained</label></td>
+     </tr> 
+     <tr>
+        <td></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Poor</label></td>
+    </tr>
+    <br>
+    <tr>
+        <td><label>Domain Knowledge</label></td>
+        <td><input type="radio" id="yes" formControlName="domainKnowledge" value="1" >        Yes
+        <input type="radio" id="no" formControlName="domainKnowledge" value="2">      No</td>
+   
+    </tr>
+    <br>
+
+    <tr>
+        <td><label>Technical Expertise</label></td>
+        <td><input type="radio" id="yes" formControlName="technicalExpertise" value="1" >        Yes
+        <input type="radio" id="no" formControlName="technicalExpertise" value="2">      No</td>
+   
+    </tr>
+    <br>
+    <tr>
+        <td><label>Project Management Techniques</label></td>
+        <td><input type="radio" id="yes" formControlName="management" value="1" >        Yes
+        <input type="radio" id="no" formControlName="management" value="2">      No</td>
+   
+    </tr>
+    <br>
+    <tr>
+        <td><label>Knowledge of Quality Processes</label></td>
+        <td><input type="radio" id="yes" formControlName="quality" value="1" >        Yes
+        <input type="radio" id="no" formControlName="quality" value="2">      No</td>
+   
+    </tr>
+    <br>
+    <tr>
+        <td><label>Knowledge of Risk Management</label></td>
+        <td><input type="radio" id="yes" formControlName="risk" value="1" >        Yes
+        <input type="radio" id="no" formControlName="risk" value="2">      No</td>
+   
+    </tr>
+    <br>
+
+        <tr>
+            <td><label>Required Skills</label></td>
+            <td><input type="radio" id="yes" formControlName="skillsMatched" value="1" >        Yes
+            <input type="radio" id="no" formControlName="skillsMatched" value="2">      No</td>
+       
+        </tr>
+        <br>
+        <tr>
+            <td><label>Behavioural Competencies</label></td>
+            <td><input type="radio" id="yes" formControlName="skillsMatched" value="1" >        Yes
+            <input type="radio" id="no" formControlName="skillsMatched" value="2">      No</td>
+       
+        </tr>
+        <br>
+        <tr>
+            <td><label>Personal Effectiveness</label></td>
+            <td><input type="radio" id="yes" formControlName="personalEffectiveness" value="1" >      Yes
+            <input type="radio" id="no" formControlName="personalEffectiveness" value="2">        No</td>
+        </tr>
+    
+        
+       
+    </table>
+    </div>
+           
+  
+  
+    </div>
+    </div>
+     <!-- </div>  -->
+    </div>  
+  
+  <br>
+  <br>
+  
+  <br>
+  <br>
+  
+  </div>
+  </div>
+  <div class="row card1">
+      
+    <div class="heading"><h2>Technical Teams Decision Portal</h2>
+    <h4>Level 2 Technical Discussion with Candidate by L2 Panel</h4></div>
+<div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason" class="reason"></textarea></div>
+    <div><h5>Are you sure about your decision?</h5></div>
+        <div>
+          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+        
+            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+          </div>
+       
+    </div>
+  </form>
+  </div>
+  </div>
+  
+  

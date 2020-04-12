@@ -1,0 +1,172 @@
+
+<div class="container-fluid">
+    <div class="row header-section">
+        <span>Form Six</span>
+    </div>
+  
+        <div class="row card">
+            <!-- <h3>{{data}}</h3>  -->
+   <form [formGroup]="userForm" (ngSubmit)="submit()">
+       <div class="form-group">
+    
+  
+  
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h4>Information about the candidate</h4>
+             <!-- <div class="row card1"> -->
+          
+  
+            <div class="col-sm-12">
+            <div>
+           
+        <table>
+            <tr>
+                <td><label> Email Id </label></td>
+                <td><input type="email" formControlName="mailId"></td>
+                <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
+            </tr>
+            <br>
+            
+        <tr>
+            <td><label> CV </label></td>
+            <td><input type="file" formControlName="cv"></td>
+        </tr>
+        <br>
+       
+      
+        <!-- <tr>
+            <td><label> Sources</label></td>
+            <td><select  formControlName="source" id="sources">
+                <option value="select">Select</option>
+                <option value="saab"> Zip Recruiters</option>
+                <option value="fiat">Dice</option>
+                <option value="audi">Indeed.com</option>
+                <option value="saab"> LinkedIn </option>
+                <option value="fiat">CareerBuilder</option>
+                <option value="audi">Monster</option>
+                <option value="saab">Twitter</option>
+                <option value="fiat">University Career Centers</option>
+                <option value="audi">Newspaper Advertisements</option>
+                <option value="fiat">Campus Drives</option>
+                <option value="audi">Walk-ins</option>
+
+              </select></td>
+        </tr>
+        <br>
+        -->
+      
+        <tr>
+              <td><label>Date of Birth (DD/MM/YYYY) </label></td>
+              <td><input type="date" formControlName="dob"></td>
+        </tr>
+    
+        <br>
+        
+            
+        <tr>
+          <td><label>Contact</label></td>
+          <td><input type="number" formControlName="contact"></td>
+    </tr>
+  
+    <br>
+            <tr>
+                <td><label>Registration Date</label></td>
+                <td><input type="date" formControlName="registrationDate"></td>
+            </tr>
+            <br>
+        </table>
+    <div> <h4>Dashboard</h4>
+      <table> 
+           <tr>
+            <td><label>Time taken for scrutiny</label></td>
+          
+            <td><input type="time" formControlName="timeTaken"></td>
+           
+        </tr>
+        <br>
+        <tr>
+        <td><label>Discussion Time</label></td>
+        </tr>
+        <tr>
+        <td><input type="checkbox" class="form-check-input medium">&nbsp;&nbsp;&nbsp;&nbsp;<label>Telephonic</label></td>
+        <td><input type="time" formControlName="discussionTimeTaken"></td>
+    </tr>
+    <br>
+    <tr>
+        <td><input type="checkbox" class="form-check-input medium">&nbsp;&nbsp;&nbsp;&nbsp;<label>Face-to-Face</label></td>
+        <td><input type="time" formControlName="discussionTimeTaken"></td>
+    </tr>
+    <br>
+        <tr>
+            <td><label>Skills Matched</label></td>
+            <td><input type="radio" id="yes" formControlName="skillsMatched" value="1" >        Yes
+            <input type="radio" id="no" formControlName="skillsMatched" value="2">      No</td>
+       
+        </tr>
+        <br>
+        <tr>
+            <td><label>Criteria Matched</label></td>
+            <td><input type="radio" id="yes" formControlName="criteriaMatched" value="1" >      Yes
+            <input type="radio" id="no" formControlName="criteriaMatched" value="2">        No</td>
+        </tr>
+        <br>
+        <tr>
+            <td><label>Internships Taken</label></td>
+            <td><input type="radio" id="yes" formControlName="internships" value="1" >      Yes
+            <input type="radio" id="no" formControlName="internships" value="2">        No</td>
+        </tr>
+        <br>
+       
+
+       <tr>
+            <td><label>Trainings</label></td>
+            <td><input type="radio" id="yes" formControlName="trainings" value="1" >        Yes
+                <input type="radio" id="no" formControlName="trainings" value="2">      No</td>
+           
+        </tr>
+        <!-- <br>
+        <tr>
+            <td><label>Questions related to Recruitment</label></td>
+            <td><textarea placeholder="List out the Questions"></textarea></td>
+        
+        </tr>
+        <br> --> 
+       
+    </table>
+    </div>
+           
+  
+  
+    </div>
+    </div>
+     <!-- </div>  -->
+    </div>  
+  
+  <br>
+  <br>
+  
+  <br>
+  <br>
+  
+  </div>
+  </div>
+  <div class="row card1">
+      
+    <div class="heading"><h2>Technical Teams Decision Portal</h2>
+    <h4>Initial CV Screening</h4></div>
+<div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason" class="reason"></textarea></div>
+    <div><h5>Are you sure about your decision?</h5></div>
+        <div>
+          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+        
+            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+          </div>
+       
+    </div>
+  </form>
+  </div>
+  </div>
+  
+  
