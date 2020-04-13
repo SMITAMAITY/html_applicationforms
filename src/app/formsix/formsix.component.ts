@@ -14,7 +14,7 @@ export class FormsixComponent implements OnInit {
   url:string= "http://localhost:8080/ScreeningTwo";
   userForm: FormGroup;
   mailId: string;
-  cv:any;
+  cv:string;
   dob:Date;
   contact:number;
   registrationDate:string;

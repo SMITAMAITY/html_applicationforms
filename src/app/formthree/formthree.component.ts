@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http'
 export class FormthreeComponent implements OnInit {
   url:string= "http://localhost:8080/AssembleData";
   userForm: FormGroup;
-  cv:any;
+  cv:string;
   mailId:string;
   source:string;
   dob:Date;

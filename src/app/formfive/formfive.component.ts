@@ -14,7 +14,7 @@ export class FormfiveComponent implements OnInit {
   url:string= "http://localhost:8080/RecruitmentRoundOne";
   userForm: FormGroup;
   mailId: string;
-  cv:any;
+  cv:string;
   dob:Date;
   contact:number;
   registrationDate:string;

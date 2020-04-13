@@ -15,7 +15,7 @@ export class FormsevenComponent implements OnInit {
   userForm: FormGroup;
   mailId: string;
   Name:string;
-  cv:any;
+  cv:string;
   dob:Date;
   contact:number;
   registrationDate:string;

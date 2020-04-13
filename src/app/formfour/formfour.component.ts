@@ -10,10 +10,11 @@ import { HttpClient } from '@angular/common/http'
   styleUrls: ['./formfour.component.css']
 })
 export class FormfourComponent implements OnInit {
+  url1:string="http://localhost:8080/assembledata";
   url:string= "http://localhost:8080/ScreeningOne";
   userForm: FormGroup;
   mailId: string;
-  cv:any;
+  cv:string;
   dob:Date;
   contact:number;
   registrationDate:string;
@@ -23,7 +24,8 @@ export class FormfourComponent implements OnInit {
   reason:string;
   decision:string;
   result:any;
-  
+  result1:any;
+
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
@@ -42,6 +44,11 @@ export class FormfourComponent implements OnInit {
    });
   }
   
+  fetch():void{
+    this.http.get(this.url1).subscribe(data=>{
+      this.result1 =data;
+    })
+  }
   submit():void{
     // alert('login');
    // let url = this.url+"/"+this.Username+"/"+this.password;

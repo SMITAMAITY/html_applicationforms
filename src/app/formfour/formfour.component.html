@@ -8,7 +8,7 @@
             <!-- <h3>{{data}}</h3>  -->
    <form [formGroup]="userForm" (ngSubmit)="submit()">
        <div class="form-group">
-    
+   
   
   
     <div class="row">
@@ -25,13 +25,15 @@
             <tr>
                 <td><label> Email Id </label></td>
                 <td><input type="email" formControlName="mailId"></td>
-                <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
+                
+                <td> <button type="button" class="btn btn-dark upload" (click)="fetch()">Fetch Details</button></td>
+        
             </tr>
             <br>
-            
+            <div *ngFor="let a of result1">
         <tr>
             <td><label> CV </label></td>
-            <td><input type="file" formControlName="cv"></td>
+            <td formControlname="cv">{{a.cv}}</td>
         </tr>
         <br>
        
@@ -58,8 +60,9 @@
         -->
       
         <tr>
-              <td><label>Date of Birth (DD/MM/YYYY) </label></td>
-              <td><input type="date" formControlName="dob"></td>
+              <td><label>Date of Birth (DD/MM/YYYY) </label></td> 
+              <td formControlName="dob">{{a.dob}}</td>
+            
         </tr>
     
         <br>
@@ -67,15 +70,19 @@
             
         <tr>
           <td><label>Contact</label></td>
-          <td><input type="number" formControlName="contact"></td>
+          <td formControlName="contact">{{a.contact}}</td>
+  
     </tr>
   
     <br>
             <tr>
                 <td><label>Registration Date</label></td>
-                <td><input type="date" formControlName="registrationDate"></td>
+                <td formControlName="registrationDate">{{a.registrationDate}}</td>
+              
             </tr>
+        </div>
             <br>
+           
         </table>
     <div> <h4>Dashboard</h4>
       <table> 
