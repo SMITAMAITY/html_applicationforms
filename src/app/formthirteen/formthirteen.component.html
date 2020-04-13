@@ -1,1 +1,135 @@
-<p>formthirteen works!</p>
+
+<div class="container-fluid">
+    <div class="row header-section">
+        <span>Form Thirteen</span>
+    </div>
+  
+        <div class="row card">
+            <!-- <h3>{{data}}</h3>  -->
+   <form [formGroup]="userForm" (ngSubmit)="submit()">
+       <div class="form-group">
+    
+  
+  
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h4>Information about the candidate</h4>
+             <!-- <div class="row card1"> -->
+          
+  
+            <div class="col-sm-12">
+            <div>
+           
+        <table>
+            <tr>
+                <td><label> Email Id </label></td>
+                <td><input type="email" formControlName="mailId"></td>
+                <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label> Candidate's Name </label></td>
+                <td><input type="text" formControlName="Name"></td>
+               
+            </tr>
+            <br>
+        <tr>
+            <td><label> CV </label></td>
+            <td><input type="file" formControlName="cv"></td>
+        </tr>
+        <br>
+       
+      
+ 
+      
+        <tr>
+              <td><label>Date of Birth (DD/MM/YYYY) </label></td>
+              <td><input type="date" formControlName="dob"></td>
+        </tr>
+    
+        <br>
+        
+            
+        <tr>
+          <td><label>Contact</label></td>
+          <td><input type="number" formControlName="contact"></td>
+    </tr>
+  
+    <br>
+            <tr>
+                <td><label>Registration Date</label></td>
+                <td><input type="date" formControlName="registrationDate"></td>
+            </tr>
+            <br>
+        </table>
+  
+       
+   <div class="row card2">
+    <table>
+        <tr>
+            <td> <h4>Salary Breakup Details</h4></td>
+        </tr>
+      <tr>
+          <td><a href="/images/myw3schoolsimage.jpg" download>
+            <img src="/assets/logo1.png" alt="W3Schools" width="15" height="15">filename.pdf
+          </a></td></tr>
+      
+    </table>
+   </div>
+<div>
+    <h4>Documents for Proof</h4>
+    <td> <label> Last 3 months salary slip </label><button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
+    
+</div>
+   <div> 
+        <h4>Approver Details</h4>
+        <table> 
+            <tr>
+                <td><label>Name of Approver</label></td>
+                <td><input type="text"  formControlName="approver" > 
+                    </td>
+            </tr>
+        <tr>
+            <td><label>Applicable for Exception Approval</label></td>
+            <td><input type="radio" id="yes" formControlName="confirmation" value="1" >      Required
+                <input type="radio" id="no" formControlName="confirmation" value="2">        Not Required</td>
+        </tr>
+   
+        
+    </table>
+</div>
+           
+  
+  
+    </div>
+    </div>
+     <!-- </div>  -->
+    </div>  
+  
+  <br>
+  <br>
+  
+  <br>
+  <br>
+  
+  </div>
+  </div>
+  <div class="row card1">
+      
+    <div class="heading"><h2>CHRO/CIO's Decision Portal</h2>
+    <h4>Exceptional Finance Approval</h4></div>
+<div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason" class="reason"></textarea></div>
+    <div><h5>Are you sure about your decision?</h5></div>
+        <div>
+          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+        
+            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+          </div>
+       
+    </div>
+  </form>
+  </div>
+  </div>
+  
+  

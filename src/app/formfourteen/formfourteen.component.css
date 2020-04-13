@@ -1,0 +1,226 @@
+.header-section{
+    height: 80px;
+    line-height: 80px;
+    color: beige;
+    background-color: rgb(46, 43, 43);
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.card{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+    /* margin: 20px; */
+     padding: 5px; 
+    height:auto;
+    margin-left: 400px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+input[type="text"]
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:80%;
+}
+
+input[type="number"]
+{
+    font-size: 15px;
+    font-family: sans-serif;
+    width:300px;
+}
+
+.reason{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:600px;
+}
+
+.training{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:500px;
+}
+
+.card1{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+    width:54%;
+    margin-left: 300px;
+}
+
+.card2{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+    width:100%;
+    margin-left: 300px;
+}
+
+.rrid{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card2{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+     margin-left: 5px; 
+    padding: 10px;
+    width:700px;
+}
+
+legend{
+    margin-bottom:4px;
+}
+
+label{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+h4{
+    margin-top: 5%;
+    
+}
+
+#place{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+
+#request{
+    
+    width: 600px;
+    
+}
+
+table,td,tr{
+    margin-left: 0px;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0px;
+    background-color: cornflowerblue;
+}
+
+.progress{
+    width:200px;
+    margin-top: 10px;
+}
+
+#units{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:100px;
+}
+
+
+.upload{
+    margin-left: 100px;
+}
+
+.cancel{
+    margin-left: 200px;
+    margin-top:-56px;
+}
+
+input[type="email"]{
+    width:60%;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+#sources{
+    width:100%;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.approve{
+    margin-left: 100px;
+}
+.reject{
+    margin-left: 200px;
+}
+
+h5{
+    font-weight: 700;
+}
+
+input[type="time"]{
+    margin-left:100px;
+}
+
+input[type="radio"]{
+    margin-left:0px;
+    size:12px;
+    font-size: 15px;
+    
+}
+
+.medium{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#yes, #no{
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+h2{
+    font-weight: 700;
+}
+
+table{
+    box-sizing: border-box;
+    border: 2px black;
+    padding:2px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+th,tr,td{
+    padding:5px;
+    font-size: 15px;
+    font-family: sans-serif;
+  
+}
+
+th{
+    background-color: #333;
+    color:whitesmoke;
+    font-size: 15px;
+    font-family: sans-serif;
+    
+}
+
+button{
+    font-weight: 600;
+}
+
+button:hover{
+background-color:green;
+font-weight: 600;
+}
+
+.submit{
+    margin-left: 450px;
+    margin-top: 10px;
+}
