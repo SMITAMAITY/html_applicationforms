@@ -6,14 +6,13 @@ import { HttpClient } from '@angular/common/http'
 import { Time } from '@angular/common';
 
 @Component({
-  selector: 'app-formnine',
-  templateUrl: './formnine.component.html',
-  styleUrls: ['./formnine.component.css']
+  selector: 'app-formten',
+  templateUrl: './formten.component.html',
+  styleUrls: ['./formten.component.css']
 })
-export class FormnineComponent implements OnInit {
+export class FormtenComponent implements OnInit {
 
-
-  url:string= "http://localhost:8080/HR";
+  url:string= "http://localhost:8080/RecruitmentRoundTwo";
   userForm: FormGroup;
   mailId: string;
   Name:string;
@@ -26,16 +25,9 @@ export class FormnineComponent implements OnInit {
   job:string;
   timeTaken:Time;
   interview:string;
-  domainKnowledge:string;
-  management:string;
-  quality:string;
-  risk:string;
-  skillsMatched:string;
-  behaviour:string;
-  personalEffectiveness:string;
   confirmation:string;
-  noticePeriod:Time;
-  bond:Time;
+  salary:number;
+  venue:string;
   reason:string;
   decision:string;
   result:any;
@@ -55,16 +47,9 @@ export class FormnineComponent implements OnInit {
   job:[],
   timeTaken:[],
   interview:[],
-  domainKnowledge:[],
-  management:[],
-  quality:[],
-  risk:[],
-  skillsMatched:[],
-  behaviour:[],
-  personalEffectiveness:[],
   confirmation:[],
-  noticePeriod:[],
-  bond:[],
+  salary:[],
+  venue:[],
   reason:[],
   decision:[]
    });
@@ -85,7 +70,7 @@ export class FormnineComponent implements OnInit {
   }
 
   approve(){
-    this.router.navigateByUrl('ten');
+    this.router.navigateByUrl('eleven');
   }
 
   reject(){

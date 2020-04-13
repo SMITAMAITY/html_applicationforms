@@ -19,6 +19,13 @@ import { FormsixComponent } from './formsix/formsix.component';
 import { FormsevenComponent } from './formseven/formseven.component';
 import { FormeightComponent } from './formeight/formeight.component';
 import { FormnineComponent } from './formnine/formnine.component';
+import { FormtenComponent } from './formten/formten.component';
+import { FormelevenComponent } from './formeleven/formeleven.component';
+import { FormtwelveComponent } from './formtwelve/formtwelve.component';
+import { FormthirteenComponent } from './formthirteen/formthirteen.component';
+import { FormfourteenComponent } from './formfourteen/formfourteen.component';
+import { FormfifteenComponent } from './formfifteen/formfifteen.component';
+import { FormsixteenComponent } from './formsixteen/formsixteen.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +38,14 @@ import { FormnineComponent } from './formnine/formnine.component';
     FormsixComponent,
     FormsevenComponent,
     FormeightComponent,
-    FormnineComponent
+    FormnineComponent,
+    FormtenComponent,
+    FormelevenComponent,
+    FormtwelveComponent,
+    FormthirteenComponent,
+    FormfourteenComponent,
+    FormfifteenComponent,
+    FormsixteenComponent
   ],
   imports: [
     BrowserModule,

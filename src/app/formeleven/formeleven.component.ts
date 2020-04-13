@@ -5,15 +5,15 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http'
 import { Time } from '@angular/common';
 
+
 @Component({
-  selector: 'app-formnine',
-  templateUrl: './formnine.component.html',
-  styleUrls: ['./formnine.component.css']
+  selector: 'app-formeleven',
+  templateUrl: './formeleven.component.html',
+  styleUrls: ['./formeleven.component.css']
 })
-export class FormnineComponent implements OnInit {
+export class FormelevenComponent implements OnInit {
 
-
-  url:string= "http://localhost:8080/HR";
+  url:string= "http://localhost:8080/Finance";
   userForm: FormGroup;
   mailId: string;
   Name:string;
@@ -21,21 +21,8 @@ export class FormnineComponent implements OnInit {
   dob:Date;
   contact:number;
   registrationDate:Date;
-  discussioDate:Date;
-  position:string;
-  job:string;
-  timeTaken:Time;
-  interview:string;
-  domainKnowledge:string;
-  management:string;
-  quality:string;
-  risk:string;
-  skillsMatched:string;
-  behaviour:string;
-  personalEffectiveness:string;
   confirmation:string;
-  noticePeriod:Time;
-  bond:Time;
+  venue:string;
   reason:string;
   decision:string;
   result:any;
@@ -50,21 +37,8 @@ export class FormnineComponent implements OnInit {
   dob:[],
   contact:[],
   registrationDate:[],
-  discussioDate:[],
-  position:[],
-  job:[],
-  timeTaken:[],
-  interview:[],
-  domainKnowledge:[],
-  management:[],
-  quality:[],
-  risk:[],
-  skillsMatched:[],
-  behaviour:[],
-  personalEffectiveness:[],
   confirmation:[],
-  noticePeriod:[],
-  bond:[],
+  venue:[],
   reason:[],
   decision:[]
    });
@@ -85,7 +59,7 @@ export class FormnineComponent implements OnInit {
   }
 
   approve(){
-    this.router.navigateByUrl('ten');
+    this.router.navigateByUrl('twelve');
   }
 
   reject(){

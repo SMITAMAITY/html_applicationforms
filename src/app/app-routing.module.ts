@@ -10,6 +10,13 @@ import { FormsixComponent } from './formsix/formsix.component';
 import { FormsevenComponent } from './formseven/formseven.component';
 import { FormeightComponent } from './formeight/formeight.component';
 import { FormnineComponent } from './formnine/formnine.component';
+import { FormtenComponent } from './formten/formten.component';
+import { FormelevenComponent } from './formeleven/formeleven.component';
+import { FormtwelveComponent } from './formtwelve/formtwelve.component';
+import { FormthirteenComponent } from './formthirteen/formthirteen.component';
+import { FormfourteenComponent } from './formfourteen/formfourteen.component';
+import { FormfifteenComponent } from './formfifteen/formfifteen.component';
+import { FormsixteenComponent } from './formsixteen/formsixteen.component';
 
 
 const routes: Routes = [
@@ -21,7 +28,14 @@ const routes: Routes = [
   { path:'six', component: FormsixComponent },
   { path:'seven', component: FormsevenComponent },
   { path:'eight', component: FormeightComponent },
-  { path:'nine', component: FormnineComponent }
+  { path:'nine', component: FormnineComponent },
+  { path:'ten', component: FormtenComponent },
+  { path:'eleven', component: FormelevenComponent },
+  { path:'twelve', component: FormtwelveComponent },
+  { path:'thirteen', component: FormthirteenComponent },
+  { path:'fourteen', component: FormfourteenComponent },
+  { path:'fifteen', component: FormfifteenComponent },
+  { path:'sixteen', component: FormsixteenComponent }
 ];
 
 @NgModule({
