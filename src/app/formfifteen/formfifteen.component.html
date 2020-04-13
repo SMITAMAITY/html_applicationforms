@@ -1,1 +1,82 @@
-<p>formfifteen works!</p>
+<div class="container-fluid">
+    <div class="row header-section">
+        <span>Form Fourteen</span>
+    </div>
+  
+        <div class="row card">
+            <!-- <h3>{{data}}</h3>  -->
+   <form [formGroup]="userForm" (ngSubmit)="submit()">
+       <div class="form-group">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+               <h3>List of Selected Candidates</h3>
+               <table border="1">
+                   <tr>
+                   <th>Name of the Candidates</th>
+                   <th>Email Address</th>
+                   <th>Status</th>
+                   <th>Last Date of Acceptance</th>
+                   <th>Accepted Date</th>
+                   </tr>
+                   
+                   <tr>
+                       <td>Smita Maity</td>
+                       <td>smitam996@gmail.com</td>
+                       <td>Accepted</td>
+                       <td>13-04-2020</td>
+                       <td>10-04-2020</td>
+                     
+                   </tr>
+                  
+                   <tr>
+                    <td>Smita Maity</td>
+                    <td>smitam996@gmail.com</td>
+                    <td>Accepted</td>
+                    <td>13-04-2020</td>
+                       <td>10-04-2020</td>
+                 
+                </tr>
+               
+                <tr>
+                    <td>Smita Maity</td>
+                    <td>smitam996@gmail.com</td>
+                    <td>Not Accepted</td>
+                    <td>13-04-2020</td>
+                       <td>10-04-2020</td>
+                   
+                </tr>
+                <tr>
+                    <td>Smita Maity</td>
+                    <td>smitam996@gmail.com</td>
+                    <td>Not Accepted</td>
+                    <td>13-04-2020</td>
+                       <td>10-04-2020</td>
+                   
+                </tr>
+               
+                <tr>
+                 <td>Smita Maity</td>
+                 <td>smitam996@gmail.com</td>
+                 <td>Not Accepted</td>
+                 <td>13-04-2020</td>
+                       <td>10-04-2020</td>
+                
+             </tr>
+            
+             <tr>
+                 <td>Smita Maity</td>
+                 <td>smitam996@gmail.com</td>
+                 <td>Not Accepted</td>
+                 <td>13-04-2020</td>
+                       <td>10-04-2020</td>
+                
+             </tr>
+               </table>
+            </div>
+         </div>
+         <button type="button" class="btn btn-primary submit" (click)="submit" >Submit</button>
+  </div>
+  </form>
+  </div>
+  </div>
