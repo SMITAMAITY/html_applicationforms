@@ -52,9 +52,9 @@ export class FormfifteenComponent implements OnInit {
     
     this.result = data;
   
-    this.router.navigate(['sixteen']);
+   
    });
-  
+   this.router.navigate(['sixteen']);
   }
 
  

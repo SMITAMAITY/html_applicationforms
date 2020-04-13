@@ -53,9 +53,9 @@ export class FormfourteenComponent implements OnInit {
     
     this.result = data;
   
-    this.router.navigate(['fifteen']);
+    
    });
-  
+   this.router.navigate(['fifteen']);
   }
 
  
