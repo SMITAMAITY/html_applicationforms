@@ -12,7 +12,7 @@ import { Time } from '@angular/common';
 })
 export class FormtwelveComponent implements OnInit {
 
-  url:string= "http://localhost:8080/BU";
+  url:string= "http://localhost:8080/FirstExceptionApproval";
   userForm: FormGroup;
   mailId: string;
   Name:string;
