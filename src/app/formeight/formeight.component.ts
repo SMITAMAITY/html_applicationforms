@@ -14,52 +14,55 @@ export class FormeightComponent implements OnInit {
 
   url:string= "http://localhost:8080/L2Panel";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   Name:string;
-  cv:any;
+  cv:string;
   dob:Date;
-  contact:number;
-  registrationDate:string;
-  discussioDate:Date;
+  contact:string;
+  registration:Date;
+  discussiodate:Date;
   position:string;
   job:string;
-  timeTaken:Time;
+  time:string;
   interview:string;
-  discussionTimeTaken:Time;
-  domainKnowledge:string;
-  technicalExpertise:string;
+  discussiontime:string;
+  domainknowledge:string;
+  technicalexpertise:string;
   management:string;
   quality:string;
   risk:string;
-  skillsMatched:string;
+  skills:string;
+  behaviour:string;
+  personaleffectivness:string;
   reason:string;
-  decision:string;
+  
   result:any;
   
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
-  Name:[],
-  cv:[],
-  dob:[],
-  contact:[],
-  registrationDate:[],
-  discussioDate:[],
-  position:[],
-  job:[],
-  timeTaken:[],
-  interview:[],
-  discussionTimeTaken:[],
-  domainKnowledge:[],
-  technicalExpertise:[],
-  management:[],
-  quality:[],
-  risk:[],
-  skillsMatched:[],
-  reason:[],
-  decision:[]
+    mail: [],
+    Name:[],
+    cv:[],
+    dob:[],
+    contact:[],
+    registration:[],
+    discussiodate:[],
+    position:[],
+    job:[],
+    time:[],
+    interview:[],
+    discussiontime:[],
+    domainknowledge:[],
+    technicalexpertise:[],
+    management:[],
+    quality:[],
+    risk:[],
+    skills:[],
+    behaviour:[],
+    personaleffectivness:[],
+    reason:[]
    });
   }
   
@@ -72,16 +75,16 @@ export class FormeightComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+    
    });
-  
+   this.router.navigate(['nine']);
   }
 
-  approve(){
-    this.router.navigateByUrl('nine');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('nine');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }

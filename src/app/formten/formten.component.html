@@ -24,7 +24,7 @@
         <table>
             <tr>
                 <td><label> Email Id </label></td>
-                <td><input type="email" formControlName="mailId"></td>
+                <td><input type="email" formControlName="mail"></td>
                 <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
             </tr>
             <br>
@@ -36,7 +36,7 @@
             <br>
         <tr>
             <td><label> CV </label></td>
-            <td><input type="file" formControlName="cv"></td>
+            <td><input type="text" formControlName="cv"></td>
         </tr>
         <br>
        
@@ -53,13 +53,13 @@
             
         <tr>
           <td><label>Contact</label></td>
-          <td><input type="number" formControlName="contact"></td>
+          <td><input type="text" formControlName="contact"></td>
     </tr>
   
     <br>
             <tr>
                 <td><label>Registration Date</label></td>
-                <td><input type="date" formControlName="registrationDate"></td>
+                <td><input type="date" formControlName="registration"></td>
             </tr>
             <br>
         </table>
@@ -68,7 +68,7 @@
         <tr>
             <td><label>Discussion Date</label></td>
           
-            <td><input type="date" formControlName="discussionDate"></td>
+            <td><input type="date" formControlName="discussiondate"></td>
            
         </tr>
         <br>
@@ -89,7 +89,7 @@
            <tr>
             <td><label>Discussion Time</label></td>
           
-            <td><input type="time" formControlName="timeTaken"></td>
+            <td><input type="text" formControlName="time"></td>
            
         </tr>
         <br>
@@ -164,9 +164,9 @@
 <div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason" class="reason"></textarea></div>
     <div><h5>Are you sure about your decision?</h5></div>
         <div>
-          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+          <button type="submit" class="approve btn btn-success">Approve</button>
         
-            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+            <button type="submit" class="reject btn btn-danger">Reject</button>
           </div>
        
     </div>

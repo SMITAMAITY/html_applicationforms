@@ -24,16 +24,16 @@
         <table>
             <tr>
                 <td><label> Email Id </label></td>
-                <td><input type="email" formControlName="mailId"></td>
+                <td><input type="email" formControlName="mail"></td>
                 
                 <td> <button type="button" class="btn btn-dark upload" (click)="fetch()">Fetch Details</button></td>
         
             </tr>
             <br>
-            <div *ngFor="let a of result1">
+          
         <tr>
             <td><label> CV </label></td>
-            <td formControlname="cv">{{a.cv}}</td>
+            <td ><input type="text" formControlname="cv"></td>
         </tr>
         <br>
        
@@ -61,7 +61,7 @@
       
         <tr>
               <td><label>Date of Birth (DD/MM/YYYY) </label></td> 
-              <td formControlName="dob">{{a.dob}}</td>
+              <td ><input type="date" formControlname="dob">/td>
             
         </tr>
     
@@ -70,17 +70,17 @@
             
         <tr>
           <td><label>Contact</label></td>
-          <td formControlName="contact">{{a.contact}}</td>
+          <td><input type="text" formControlname="contact"></td>
   
     </tr>
   
     <br>
             <tr>
                 <td><label>Registration Date</label></td>
-                <td formControlName="registrationDate">{{a.registrationDate}}</td>
+                <td><input type="date"  formControlName="registration"></td>
               
             </tr>
-        </div>
+      
             <br>
            
         </table>
@@ -88,19 +88,19 @@
       <table> 
            <tr>
             <td><label>Time taken for scrutiny</label></td>
-            <td><input type="time" formControlName="timeTaken"></td>
+            <td><input type="text" formControlName="time"></td>
         </tr>
         <br>
         <tr>
             <td><label>Skills Matched</label></td>
-            <td><input type="radio" id="yes" formControlName="skillsMatched">Yes</td>
-            <td><input type="radio" id="no" formControlName="skillsMatched">No</td>
+            <td><input type="radio" id="yes" formControlName="skills" value="1">Yes</td>
+            <td><input type="radio" id="no" formControlName="skills" value="2">No</td>
         </tr>
         <br>
         <tr>
             <td><label>Criteria Matched</label></td>
-            <td><input type="radio" id="yes" formControlName="criteriaMatched">Yes</td>
-            <td><input type="radio" id="no" formControlName="criteriaMatched">No</td>
+            <td><input type="radio" id="yes" formControlName="criteria" value="1">Yes</td>
+            <td><input type="radio" id="no" formControlName="criteria" value="2">No</td>
         </tr>
         <br>
     </table>
@@ -128,9 +128,9 @@
 <div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason"></textarea></div>
     <div><h5>Are you sure about your decision?</h5></div>
         <div>
-          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+          <button type="submit" class="approve btn btn-success"  >Approve</button>
         
-            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+            <button type="submit" class="reject btn btn-danger"  >Reject</button>
           </div>
        
     </div>

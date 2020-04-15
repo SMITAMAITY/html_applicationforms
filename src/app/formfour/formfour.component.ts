@@ -13,16 +13,16 @@ export class FormfourComponent implements OnInit {
   url1:string="http://localhost:8080/assembledata";
   url:string= "http://localhost:8080/ScreeningOne";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   cv:string;
   dob:Date;
-  contact:number;
-  registrationDate:string;
-  timeTaken:string;
-  skillsMatched:string;
-  criteriaMatched:string;
+  contact:string;
+  registration:Date;
+  time:string;
+  skills:string;
+  criteria:string;
   reason:string;
-  decision:string;
+ 
   result:any;
   result1:any;
 
@@ -30,16 +30,15 @@ export class FormfourComponent implements OnInit {
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
+    mail: [],
     cv:[],
     dob:[],
     contact:[],
-    registrationDate:[],
-    timeTaken:[],
-    skillsMatched:[],
-    criteriaMatched:[],
-    reason:[],
-    decision:[]
+    registration:[],
+    time:[],
+    skills:[],
+    criteria:[],
+    reason:[]
   
    });
   }
@@ -58,17 +57,17 @@ export class FormfourComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+    this.router.navigate(['five']);
    });
   
   }
 
-  approve(){
-    this.router.navigateByUrl('five');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('five');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }
 

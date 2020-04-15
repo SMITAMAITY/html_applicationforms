@@ -14,44 +14,43 @@ export class FormtenComponent implements OnInit {
 
   url:string= "http://localhost:8080/RecruitmentRoundTwo";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   Name:string;
-  cv:any;
+  cv:string;
   dob:Date;
-  contact:number;
-  registrationDate:Date;
-  discussioDate:Date;
+  contact:string;
+  registration:Date;
+  discussiodate:Date;
   position:string;
   job:string;
-  timeTaken:Time;
+  time:string;
   interview:string;
   confirmation:string;
   salary:number;
   venue:string;
   reason:string;
-  decision:string;
+
   result:any;
   
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
+    mail: [],
   Name:[],
   cv:[],
   dob:[],
   contact:[],
-  registrationDate:[],
-  discussioDate:[],
+  registration:[],
+  discussiodate:[],
   position:[],
   job:[],
-  timeTaken:[],
+  time:[],
   interview:[],
   confirmation:[],
   salary:[],
   venue:[],
-  reason:[],
-  decision:[]
+  reason:[]
    });
   }
   
@@ -64,16 +63,16 @@ export class FormtenComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+    this.router.navigate(['eleven']);
    });
   
   }
 
-  approve(){
-    this.router.navigateByUrl('eleven');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('eleven');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }

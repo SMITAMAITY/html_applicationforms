@@ -15,58 +15,57 @@ export class FormnineComponent implements OnInit {
 
   url:string= "http://localhost:8080/HR";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   Name:string;
-  cv:any;
+  cv:string;
   dob:Date;
-  contact:number;
-  registrationDate:Date;
-  discussioDate:Date;
+  contact:string;
+  registration:Date;
+  discussiondate:Date;
   position:string;
   job:string;
-  timeTaken:Time;
+  time:string;
   interview:string;
-  domainKnowledge:string;
+  domainknowledge:string;
   management:string;
   quality:string;
   risk:string;
-  skillsMatched:string;
+  skills:string;
   behaviour:string;
-  personalEffectiveness:string;
+  personaleffectiveness:string;
   confirmation:string;
-  noticePeriod:Time;
-  bond:Time;
+  noticePeriod:Date;
+  bond:string;
   reason:string;
-  decision:string;
+
   result:any;
   
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
+    mail: [],
   Name:[],
   cv:[],
   dob:[],
   contact:[],
-  registrationDate:[],
-  discussioDate:[],
+  registration:[],
+  discussiondate:[],
   position:[],
   job:[],
-  timeTaken:[],
+  time:[],
   interview:[],
-  domainKnowledge:[],
+  domainknowledge:[],
   management:[],
   quality:[],
   risk:[],
-  skillsMatched:[],
+  skills:[],
   behaviour:[],
-  personalEffectiveness:[],
+  personaleffectiveness:[],
   confirmation:[],
   noticePeriod:[],
   bond:[],
-  reason:[],
-  decision:[]
+  reason:[]
    });
   }
   
@@ -79,16 +78,16 @@ export class FormnineComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+   
    });
-  
+   this.router.navigate(['ten']);
   }
 
-  approve(){
-    this.router.navigateByUrl('ten');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('ten');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }

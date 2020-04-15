@@ -13,40 +13,39 @@ import { Time } from '@angular/common';
 export class FormfiveComponent implements OnInit {
   url:string= "http://localhost:8080/RecruitmentRoundOne";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   cv:string;
   dob:Date;
   contact:number;
-  registrationDate:string;
-  timeTaken:Time;
-  discussionTimeTaken:Time;
-  skillsMatched:string;
-  criteriaMatched:string;
+  registration:Date;
+  time:Time;
+  discussiontime:Time;
+  skills:string;
+  criteria:string;
   internships:string;
   trainings:string;
   questions:string;
   reason:string;
-  decision:string;
+  
   result:any;
   
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
+    mail: [],
     cv:[],
     dob:[],
     contact:[],
-    registrationDate:[],
-    timeTaken:[],
-    discussionTimeTaken:[],
-    skillsMatched:[],
-    criteriaMatched:[],
+    registration:[],
+    time:[],
+    discussiontime:[],
+    skills:[],
+    criteria:[],
     internships:[],
     trainings:[],
     questions:[],
-    reason:[],
-    decision:[]
+    reason:[]
   
    });
   }
@@ -60,16 +59,16 @@ export class FormfiveComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+    this.router.navigate(['six']);
    });
   
   }
 
-  approve(){
-    this.router.navigateByUrl('six');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('six');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }

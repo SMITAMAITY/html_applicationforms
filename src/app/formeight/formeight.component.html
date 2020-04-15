@@ -24,7 +24,7 @@
         <table>
             <tr>
                 <td><label> Email Id </label></td>
-                <td><input type="email" formControlName="mailId"></td>
+                <td><input type="email" formControlName="mail"></td>
                 <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
             </tr>
             <br>
@@ -36,7 +36,7 @@
             <br>
         <tr>
             <td><label> CV </label></td>
-            <td><input type="file" formControlName="cv"></td>
+            <td><input type="text" formControlName="cv"></td>
         </tr>
         <br>
        
@@ -53,13 +53,13 @@
             
         <tr>
           <td><label>Contact</label></td>
-          <td><input type="number" formControlName="contact"></td>
+          <td><input type="string" formControlName="contact"></td>
     </tr>
   
     <br>
             <tr>
                 <td><label>Registration Date</label></td>
-                <td><input type="date" formControlName="registrationDate"></td>
+                <td><input type="date" formControlName="registration"></td>
             </tr>
             <br>
         </table>
@@ -68,7 +68,7 @@
         <tr>
             <td><label>Discussion Date</label></td>
           
-            <td><input type="date" formControlName="discussionDate"></td>
+            <td><input type="date" formControlName="discussiondate"></td>
            
         </tr>
         <br>
@@ -89,7 +89,7 @@
            <tr>
             <td><label>Discussion Time</label></td>
           
-            <td><input type="time" formControlName="timeTaken"></td>
+            <td><input type="time" formControlName="time"></td>
            
         </tr>
         <br>
@@ -116,33 +116,33 @@
 
     <tr>
         <td><label>Technical Competencies</label></td>
-        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Expert</label></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussiontime">&nbsp;&nbsp;&nbsp;&nbsp;<label>Expert</label></td>
     </tr>
     <tr>
         <td></td>
-        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Competent</label></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussiontime">&nbsp;&nbsp;&nbsp;&nbsp;<label>Competent</label></td>
     </tr>
      <tr>
         <td></td>
-        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Trained</label></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussiontime">&nbsp;&nbsp;&nbsp;&nbsp;<label>Trained</label></td>
      </tr> 
      <tr>
         <td></td>
-        <td><input type="checkbox" class="form-check-input medium" formControlName="discussionTimeTaken">&nbsp;&nbsp;&nbsp;&nbsp;<label>Poor</label></td>
+        <td><input type="checkbox" class="form-check-input medium" formControlName="discussiontime">&nbsp;&nbsp;&nbsp;&nbsp;<label>Poor</label></td>
     </tr>
     <br>
     <tr>
         <td><label>Domain Knowledge</label></td>
-        <td><input type="radio" id="yes" formControlName="domainKnowledge" value="1" >        Yes
-        <input type="radio" id="no" formControlName="domainKnowledge" value="2">      No</td>
+        <td><input type="radio" id="yes" formControlName="domainknowledge" value="1" >        Yes
+        <input type="radio" id="no" formControlName="domainknowledge" value="2">      No</td>
    
     </tr>
     <br>
 
     <tr>
         <td><label>Technical Expertise</label></td>
-        <td><input type="radio" id="yes" formControlName="technicalExpertise" value="1" >        Yes
-        <input type="radio" id="no" formControlName="technicalExpertise" value="2">      No</td>
+        <td><input type="radio" id="yes" formControlName="technicalexpertise" value="1" >        Yes
+        <input type="radio" id="no" formControlName="technicalexpertise" value="2">      No</td>
    
     </tr>
     <br>
@@ -170,22 +170,22 @@
 
         <tr>
             <td><label>Required Skills</label></td>
-            <td><input type="radio" id="yes" formControlName="skillsMatched" value="1" >        Yes
-            <input type="radio" id="no" formControlName="skillsMatched" value="2">      No</td>
+            <td><input type="radio" id="yes" formControlName="skills" value="1" >        Yes
+            <input type="radio" id="no" formControlName="skills" value="2">      No</td>
        
         </tr>
         <br>
         <tr>
             <td><label>Behavioural Competencies</label></td>
-            <td><input type="radio" id="yes" formControlName="skillsMatched" value="1" >        Yes
-            <input type="radio" id="no" formControlName="skillsMatched" value="2">      No</td>
+            <td><input type="radio" id="yes" formControlName="behaviour" value="1" >        Yes
+            <input type="radio" id="no" formControlName="behaviour" value="2">      No</td>
        
         </tr>
         <br>
         <tr>
             <td><label>Personal Effectiveness</label></td>
-            <td><input type="radio" id="yes" formControlName="personalEffectiveness" value="1" >      Yes
-            <input type="radio" id="no" formControlName="personalEffectiveness" value="2">        No</td>
+            <td><input type="radio" id="yes" formControlName="personaleffectiveness" value="1" >      Yes
+            <input type="radio" id="no" formControlName="personaleffectiveness" value="2">        No</td>
         </tr>
     
         
@@ -215,9 +215,9 @@
 <div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason" class="reason"></textarea></div>
     <div><h5>Are you sure about your decision?</h5></div>
         <div>
-          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+          <button type="submit" class="approve btn btn-success" >Approve</button>
         
-            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+            <button type="submit" class="reject btn btn-danger">Reject</button>
           </div>
        
     </div>

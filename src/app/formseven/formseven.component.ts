@@ -13,52 +13,55 @@ import { Time } from '@angular/common';
 export class FormsevenComponent implements OnInit {
   url:string= "http://localhost:8080/L1Panel";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   Name:string;
   cv:string;
   dob:Date;
-  contact:number;
-  registrationDate:string;
-  discussioDate:Date;
+  contact:string;
+  registration:Date;
+  discussiondate:Date;
   position:string;
   job:string;
-  timeTaken:Time;
+  time:String;
   interview:string;
-  discussionTimeTaken:Time;
-  domainKnowledge:string;
-  technicalExpertise:string;
+  discussiontime:string;
+  domainknowledge:string;
+ technicalexpertise:string;
   management:string;
   quality:string;
   risk:string;
-  skillsMatched:string;
+  skills:string;
+  behaviour:string;
+  personaleffectivness:string;
   reason:string;
-  decision:string;
+
   result:any;
   
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
-  Name:[],
-  cv:[],
-  dob:[],
-  contact:[],
-  registrationDate:[],
-  discussioDate:[],
-  position:[],
-  job:[],
-  timeTaken:[],
-  interview:[],
-  discussionTimeTaken:[],
-  domainKnowledge:[],
-  technicalExpertise:[],
-  management:[],
-  quality:[],
-  risk:[],
-  skillsMatched:[],
-  reason:[],
-  decision:[]
+    mail: [],
+    Name: [],
+    cv: [],
+    dob:[],
+    contact: [],
+    registration:[],
+    discussiondate:[],
+    position: [],
+    job: [],
+    time: [],
+    interview: [],
+    discussiontime: [],
+    domainknowledge: [],
+    technicalexpertise:[],
+    management: [],
+    quality: [],
+    risk: [],
+    skills: [],
+    behaviour: [],
+    personaleffectivness: [],
+    reason: []
    });
   }
   
@@ -71,16 +74,16 @@ export class FormsevenComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+    
    });
-  
+   this.router.navigate(['eight']);
   }
 
-  approve(){
-    this.router.navigateByUrl('eight');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('eight');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }

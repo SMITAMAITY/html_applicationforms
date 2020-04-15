@@ -15,32 +15,33 @@ export class FormthirteenComponent implements OnInit {
 
   url:string= "http://localhost:8080/FinalExceptionApproval";
   userForm: FormGroup;
-  mailId: string;
+  mail: string;
   Name:string;
-  cv:any;
+  cv:string;
   dob:Date;
-  contact:number;
-  registrationDate:Date;
+  contact:string;
+  proof:string;
+  registration:Date;
   approver:string;
   confirmation:string;
   reason:string;
-  decision:string;
+
   result:any;
   
   constructor(private http:HttpClient,private router: Router, private formBuilder: FormBuilder) { }
   
   ngOnInit() {
    this.userForm = this.formBuilder.group({
-    mailId: [],
+    mail: [],
     Name:[],
     cv:[],
     dob:[],
     contact:[],
-    registrationDate:[],
+    proof:[],
+    registration:[],
     approver:[],
     confirmation:[],
-    reason:[],
-    decision:[]
+    reason:[]
    });
   }
   
@@ -53,16 +54,16 @@ export class FormthirteenComponent implements OnInit {
     
     this.result = data;
   
-    //this.router.navigate(['four']);
+    this.router.navigate(['fourteen']);
    });
   
   }
 
-  approve(){
-    this.router.navigateByUrl('fourteen');
-  }
+  // approve(){
+  //   this.router.navigateByUrl('fourteen');
+  // }
 
-  reject(){
-    this.router.navigateByUrl('');
-  }
+  // reject(){
+  //   this.router.navigateByUrl('');
+  // }
   }

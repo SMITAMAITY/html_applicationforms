@@ -49,6 +49,6 @@ export class FormtwoComponent implements OnInit {
 
     this.router.navigate(['three']);
    });
-
+   
   }
 }

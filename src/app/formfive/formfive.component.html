@@ -24,14 +24,14 @@
         <table>
             <tr>
                 <td><label> Email Id </label></td>
-                <td><input type="email" formControlName="mailId"></td>
+                <td><input type="email" formControlName="mail"></td>
                 <td> <button type="button" class="btn btn-dark upload" >Fetch Details</button></td>
             </tr>
             <br>
             
         <tr>
             <td><label> CV </label></td>
-            <td><input type="file" formControlName="cv"></td>
+            <td><input type="text" formControlName="cv"></td>
         </tr>
         <br>
        
@@ -73,7 +73,7 @@
     <br>
             <tr>
                 <td><label>Registration Date</label></td>
-                <td><input type="date" formControlName="registrationDate"></td>
+                <td><input type="date" formControlName="registration"></td>
             </tr>
             <br>
         </table>
@@ -82,7 +82,7 @@
            <tr>
             <td><label>Time taken for scrutiny</label></td>
           
-            <td><input type="time" formControlName="timeTaken"></td>
+            <td><input type="time" formControlName="time"></td>
            
         </tr>
         <br>
@@ -91,25 +91,25 @@
         </tr>
         <tr>
         <td><input type="checkbox" class="form-check-input medium">&nbsp;&nbsp;&nbsp;&nbsp;<label>Telephonic</label></td>
-        <td><input type="time" formControlName="discussionTimeTaken"></td>
+        <td><input type="time" formControlName="discussiontime"></td>
     </tr>
     <br>
     <tr>
         <td><input type="checkbox" class="form-check-input medium">&nbsp;&nbsp;&nbsp;&nbsp;<label>Face-to-Face</label></td>
-        <td><input type="time" formControlName="discussionTimeTaken"></td>
+        <td><input type="time" formControlName="discussiontime"></td>
     </tr>
     <br>
         <tr>
             <td><label>Skills Matched</label></td>
-            <td><input type="radio" id="yes" formControlName="skillsMatched" value="1" >Yes
-            <input type="radio" id="no" formControlName="skillsMatched" value="2">No</td>
+            <td><input type="radio" id="yes" formControlName="skills" value="1" >Yes
+            <input type="radio" id="no" formControlName="skills" value="2">No</td>
        
         </tr>
         <br>
         <tr>
             <td><label>Criteria Matched</label></td>
-            <td><input type="radio" id="yes" formControlName="criteriaMatched" value="1" >Yes
-            <input type="radio" id="no" formControlName="criteriaMatched" value="2">No</td>
+            <td><input type="radio" id="yes" formControlName="criteria" value="1" >Yes
+            <input type="radio" id="no" formControlName="criteria" value="2">No</td>
         </tr>
         <br>
         <tr>
@@ -167,9 +167,9 @@
 <div><textarea placeholder="Reason for the decision" rows="4" formControlName="reason" class="reason"></textarea></div>
     <div><h5>Are you sure about your decision?</h5></div>
         <div>
-          <button type="submit" class="approve btn btn-success" (click)="approve()" formControlName="decision">Approve</button>
+          <button type="submit" class="approve btn btn-success"  >Approve</button>
         
-            <button type="submit" class="reject btn btn-danger" (click)="reject()" formControlName="decision">Reject</button>
+            <button type="submit" class="reject btn btn-danger" >Reject</button>
           </div>
        
     </div>
